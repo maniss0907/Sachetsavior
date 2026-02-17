@@ -13,43 +13,73 @@ body{
 margin:0;
 font-family:Arial, sans-serif;
 scroll-behavior:smooth;
-background:#f8fafc;
+background:#f1f5f9;
 }
 
 /* HEADER */
 
 header{
+
 display:flex;
 justify-content:space-between;
 align-items:center;
+
 padding:15px 40px;
-height:70px;
+
 background:white;
+
 position:fixed;
-width:100%;
 top:0;
+width:100%;
+
 box-shadow:0 2px 10px rgba(0,0,0,0.08);
+
 z-index:1000;
+
 }
 
-.logo img{
-height:60px;
-width: 70px;
+/* LOGO + TEXT */
+
+.logo-container{
+display:flex;
+align-items:center;
 }
+
+.logo-container img{
+height:42px;
+margin-right:10px;
+}
+
+.logo-text{
+color:#14b8a6;
+font-weight:bold;
+font-size:22px;
+}
+
+/* NAV */
 
 nav a{
+
 margin-left:25px;
+
 text-decoration:none;
+
 color:#333;
+
 font-weight:500;
+
 }
 
 /* HERO */
 
 .hero{
+
 padding:140px 40px 100px 40px;
+
 background:linear-gradient(135deg,#14b8a6,#0f172a);
+
 color:white;
+
 }
 
 .hero h1{
@@ -61,69 +91,129 @@ max-width:500px;
 }
 
 .btn{
-display:inline-block;
+
 margin-top:20px;
+
+display:inline-block;
+
 padding:12px 22px;
+
 background:white;
+
 color:#14b8a6;
+
 font-weight:bold;
+
 border-radius:6px;
+
 text-decoration:none;
-border:none;
-cursor:pointer;
+
 }
 
-/* SECTION */
+/* SECTIONS */
 
 .section{
+
 padding:80px 40px;
+
 text-align:center;
-background:#f1f5f9;
+
 }
 
 .card-container{
-fontcolor:black;
+
 display:flex;
+
 justify-content:center;
+
 gap:25px;
+
 flex-wrap:wrap;
+
 }
 
 .card{
+
 background:white;
+
 padding:25px;
+
 border-radius:12px;
+
 width:250px;
+
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
 }
 
+/* UPLOAD BOX */
+
+.upload-box{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+max-width:500px;
+
+margin:auto;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+}
+
+.upload-box input{
+
+margin:10px;
+
+padding:10px;
+
+}
 
 /* FOOTER */
 
 footer{
+
 background:#0f172a;
+
 color:white;
-text-align:center;
+
 padding:30px;
+
+text-align:center;
+
 }
 
 /* WHATSAPP BUTTON */
 
 .whatsapp{
+
 position:fixed;
+
 bottom:20px;
+
 right:20px;
+
 background:#25D366;
+
 color:white;
+
 padding:15px;
+
 border-radius:50%;
+
 font-size:22px;
+
 text-decoration:none;
+
 }
 
 </style>
 
 </head>
+
 
 <body>
 
@@ -132,16 +222,28 @@ text-decoration:none;
 
 <header>
 
-<div class="logo">
+<div class="logo-container">
+
 <img src="logo.png">
+
+<div class="logo-text">SachetSavior</div>
+
 </div>
 
 <nav>
 
 <a href="#home">Home</a>
+
 <a href="#how">How it Works</a>
+
+<a href="#why">Why Choose</a>
+
+<a href="#who">Who We Help</a>
+
 <a href="#upload">Upload Prescription</a>
+
 <a href="#about">About</a>
+
 <a href="#contact">Contact</a>
 
 </nav>
@@ -153,69 +255,14 @@ text-decoration:none;
 <!-- HERO -->
 
 <section class="hero" id="home">
-<h1>SachetSavior </h1>
 
-<h3>Your daily dose delivered.</h3>
+<h1>Your daily dose delivered.</h1>
 
 <p>
 
-SachetSavior organizes your medicines into easy sachets and delivers them to your doorstep.
+SachetSavior organizes your medicines into easy-to-follow sachets and delivers them to your doorstep, helping you stay consistent and confident with your treatment.
 
 </p>
-
-
-
-
-<!-- HOW IT WORKS -->
-
-<section class="section" id="how">
-
-<h2>How SachetSavior Works</h2>
-
-<div class="card-container">
-
-<div class="card">
-<h3>Upload Prescription</h3>
-<p>Upload your prescription securely.</p>
-</div>
-
-<div class="card">
-<h3>Pharmacist Packaging</h3>
-<p>Medicines organized into sachets.</p>
-</div>
-
-<div class="card">
-<h3>Home Delivery</h3>
-<p>Delivered to your home.</p>
-</div>
-
-</div>
-
-</section>
-<section class="section">
-
-<h2>Why Choose SachetSavior</h2>
-
-<div class="card">
-
-<div class="card">
-<h3>Pharmacist Verified</h3>
-<p>Every medication is handled by licensed professionals.</p>
-</div>
-
-<div class="card">
-<h3>Convenience</h3>
-<p>No sorting, no confusion, no missed doses.</p>
-</div>
-
-<div class="card">
-<h3>Reliable Service</h3>
-<p>Consistent, dependable medication delivery.</p>
-</div>
-
-</div>
-
-</section>
 
 <a href="#upload" class="btn">
 
@@ -224,9 +271,102 @@ Upload Prescription
 </a>
 
 </section>
-  
 
-<!-- UPLOAD PRESCRIPTION -->
+
+
+<!-- HOW -->
+
+<section class="section" id="how">
+
+<h2>How SachetSavior Works</h2>
+
+<div class="card-container">
+
+<div class="card">
+
+<h3>Upload Prescription</h3>
+
+<p>Share your prescription securely with our team.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Pharmacist Preparation</h3>
+
+<p>Your medicines are carefully organized into daily sachets.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Home Delivery</h3>
+
+<p>Receive your medication directly at your doorstep.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- WHY -->
+
+<section class="section" id="why">
+
+<h2>Why Choose SachetSavior</h2>
+
+<div class="card-container">
+
+<div class="card">
+
+<h3>Pharmacist Verified</h3>
+
+<p>Every medication is handled by licensed professionals.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Convenience</h3>
+
+<p>No sorting, no confusion, no missed doses.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Reliable Service</h3>
+
+<p>Consistent, dependable medication delivery.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- WHO -->
+
+<section class="section" id="who">
+
+<h2>Who We Help</h2>
+
+<p>
+
+Ideal for elderly patients, chronic conditions, and families managing multiple medications.
+
+</p>
+
+</section>
+
+
+
+<!-- UPLOAD -->
 
 <section class="section" id="upload">
 
@@ -240,7 +380,9 @@ Upload Prescription
 
 <input type="file">
 
-<button onclick="alert('Prescription submitted. We will contact you shortly.')">
+<br><br>
+
+<button onclick="alert('Prescription submitted successfully')">
 
 Submit Prescription
 
@@ -290,8 +432,6 @@ We simplify medication management through personalized sachet packaging and reli
 
 
 
-<!-- FOOTER -->
-
 <footer>
 
 © 2026 SachetSavior. All Rights Reserved.
@@ -299,8 +439,6 @@ We simplify medication management through personalized sachet packaging and reli
 </footer>
 
 
-
-<!-- WHATSAPP -->
 
 <a href="https://wa.me/919324350494" class="whatsapp">
 
@@ -310,4 +448,5 @@ We simplify medication management through personalized sachet packaging and reli
 
 
 </body>
-</html>
+
+  </html>
