@@ -19,23 +19,16 @@ background:#f1f5f9;
 /* HEADER */
 
 header{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 padding:15px 40px;
-
 background:white;
-
 position:fixed;
 top:0;
 width:100%;
-
 box-shadow:0 2px 10px rgba(0,0,0,0.08);
-
 z-index:1000;
-
 }
 
 /* LOGO + TEXT */
@@ -59,27 +52,18 @@ font-size:22px;
 /* NAV */
 
 nav a{
-
 margin-left:25px;
-
 text-decoration:none;
-
 color:#333;
-
 font-weight:500;
-
 }
 
 /* HERO */
 
 .hero{
-
 padding:140px 40px 100px 40px;
-
 background:linear-gradient(135deg,#14b8a6,#0f172a);
-
 color:white;
-
 }
 
 .hero h1{
@@ -91,126 +75,69 @@ max-width:500px;
 }
 
 .btn{
-
 margin-top:20px;
-
 display:inline-block;
-
 padding:12px 22px;
-
 background:white;
-
 color:#14b8a6;
-
 font-weight:bold;
-
 border-radius:6px;
-
 text-decoration:none;
-
+cursor:pointer;
 }
 
 /* SECTIONS */
 
 .section{
-
 padding:80px 40px;
-
 text-align:center;
-
 }
 
 .card-container{
-
 display:flex;
-
 justify-content:center;
-
 gap:25px;
-
 flex-wrap:wrap;
-
 }
 
 .card{
-
 background:white;
-
 padding:25px;
-
 border-radius:12px;
-
 width:250px;
-
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
-
-}
-
-/* UPLOAD BOX */
-
-.upload-box{
-
-background:white;
-
-padding:25px;
-
-border-radius:12px;
-
-max-width:500px;
-
-margin:auto;
-
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-
-}
-
-.upload-box input{
-
-margin:10px;
-
-padding:10px;
-
 }
 
 /* FOOTER */
 
 footer{
-
 background:#0f172a;
-
 color:white;
-
 padding:30px;
-
 text-align:center;
-
 }
 
 /* WHATSAPP BUTTON */
 
 .whatsapp{
-
 position:fixed;
-
 bottom:20px;
-
 right:20px;
-
 background:#25D366;
-
 color:white;
-
 padding:15px;
-
 border-radius:50%;
-
 font-size:22px;
-
 text-decoration:none;
-
 }
 
 </style>
+
+<script>
+function openForm() {
+window.open("https://forms.gle/ALUzvHsaw3BLNzWeA", "_blank");
+}
+</script>
 
 </head>
 
@@ -223,29 +150,18 @@ text-decoration:none;
 <header>
 
 <div class="logo-container">
-
 <img src="logo.png">
-
 <div class="logo-text">SachetSavior</div>
-
 </div>
 
 <nav>
-
 <a href="#home">Home</a>
-
 <a href="#how">How it Works</a>
-
 <a href="#why">Why Choose</a>
-
 <a href="#who">Who We Help</a>
-
-<a href="#upload">Upload Prescription</a>
-
+<a href="#" onclick="openForm()">Upload Prescription</a>
 <a href="#about">About</a>
-
 <a href="#contact">Contact</a>
-
 </nav>
 
 </header>
@@ -259,16 +175,12 @@ text-decoration:none;
 <h1>Your daily dose delivered.</h1>
 
 <p>
-
 SachetSavior organizes your medicines into easy-to-follow sachets and delivers them to your doorstep, helping you stay consistent and confident with your treatment.
-
 </p>
 
-<a href="#upload" class="btn">
-
+<button class="btn" onclick="openForm()">
 Upload Prescription
-
-</a>
+</button>
 
 </section>
 
@@ -283,27 +195,18 @@ Upload Prescription
 <div class="card-container">
 
 <div class="card">
-
 <h3>Upload Prescription</h3>
-
 <p>Share your prescription securely with our team.</p>
-
 </div>
 
 <div class="card">
-
 <h3>Pharmacist Preparation</h3>
-
 <p>Your medicines are carefully organized into daily sachets.</p>
-
 </div>
 
 <div class="card">
-
 <h3>Home Delivery</h3>
-
 <p>Receive your medication directly at your doorstep.</p>
-
 </div>
 
 </div>
@@ -321,27 +224,18 @@ Upload Prescription
 <div class="card-container">
 
 <div class="card">
-
 <h3>Pharmacist Verified</h3>
-
 <p>Every medication is handled by licensed professionals.</p>
-
 </div>
 
 <div class="card">
-
 <h3>Convenience</h3>
-
 <p>No sorting, no confusion, no missed doses.</p>
-
 </div>
 
 <div class="card">
-
 <h3>Reliable Service</h3>
-
 <p>Consistent, dependable medication delivery.</p>
-
 </div>
 
 </div>
@@ -357,34 +251,11 @@ Upload Prescription
 <h2>Who We Help</h2>
 
 <p>
-
 Ideal for elderly patients, chronic conditions, and families managing multiple medications.
-
 </p>
 
 </section>
 
-
-
-<!-- UPLOAD -->
-
-<form action="https://formsubmit.co/maniss0907@gmail.com" method="POST" enctype="multipart/form-data">
-
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Prescription Upload - SachetSavior">
-
-<input type="text" name="name" placeholder="Your Name" required>
-<br><br>
-
-<input type="text" name="phone" placeholder="Phone Number" required>
-<br><br>
-
-<input type="file" name="attachment" required>
-<br><br>
-
-<button type="submit">Submit Prescription</button>
-
-</form>
 
 
 <!-- ABOUT -->
@@ -394,15 +265,11 @@ Ideal for elderly patients, chronic conditions, and families managing multiple m
 <h2>About SachetSavior</h2>
 
 <p>
-
 SachetSavior is a pharmacist-led medication adherence service based in Navi Mumbai.
-
 </p>
 
 <p>
-
 We simplify medication management through personalized sachet packaging and reliable delivery.
-
 </p>
 
 </section>
@@ -415,10 +282,8 @@ We simplify medication management through personalized sachet packaging and reli
 
 <h2>Contact Us</h2>
 
-<p>Email: contact@sachetsavior.in</p>
-
+<p>Email: maniss0907@gmail.com</p>
 <p>Phone: +91 9324350494</p>
-
 <p>Navi Mumbai, Maharashtra</p>
 
 </section>
@@ -426,20 +291,15 @@ We simplify medication management through personalized sachet packaging and reli
 
 
 <footer>
-
 © 2026 SachetSavior. All Rights Reserved.
-
 </footer>
 
 
 
 <a href="https://wa.me/919324350494" class="whatsapp">
-
 ☎
-
 </a>
 
 
 </body>
-
-  </html>
+</html>
